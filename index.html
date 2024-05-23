@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d68757b9a1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <hr
+          style="width: 100%; opacity: 0.2; text-align: left; margin-top: 10px"
+        />
+
+        <div class="whole-body">
+          <div class="header-text">
+            <h1>Hi, I'm <span>Aman</span> <br /></h1>
+            <div class="text">
+              <div class="text-uiux"><h4>UI/UX Designer</h4></div>
+              <p>
+                Skilled in web design and development <br />
+                knowledge, producing quality work.
+              </p>
+            </div>
+          </div>
+          <img src="images/background.png" class="my-face" alt="aman" />
+        </div>
+      </div>
+    </div>
+    <!-- .....................about........................... -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              facilis molestias a, eius necessitatibus excepturi, quae quo optio
+              aut velit perspiciatis laborum magni, mollitia harum voluptates
+              commodi placeat. Officiis, facilis. Delectus similique quia ullam!
+              Reprehenderit laborum illo accusantium numquam obcaecati ad
+              doloribus vero consectetur. Dolore fugiat voluptates laboriosam
+              vel quod ad harum optio repudiandae. Aliquid reiciendis magnam
+              placeat blanditiis quibusdam? Facilis quam numquam nulla eligendi!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>2021- Current</span><br />Nothing</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2020</span><br />SEE from Rastranirman School</li>
+                <li><span>2022</span><br />+2 science from panchayat MaVi</li>
+                <li><span>2023- Current</span><br />BEI, Thapathali Campus</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------services--------------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Necessitatibus tenetur qui, recusandae debitis a vel harum
+              eligendi, eveniet accusamus eaque maiores non beatae? Voluptatem
+              dolorem dolorum consectetur, sint aperiam veniam.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Necessitatibus tenetur qui, recusandae debitis a vel harum
+              eligendi, eveniet accusamus eaque maiores non beatae? Voluptatem
+              dolorem dolorum consectetur, sint aperiam veniam.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Necessitatibus tenetur qui, recusandae debitis a vel harum
+              eligendi, eveniet accusamus eaque maiores non beatae? Voluptatem
+              dolorem dolorum consectetur, sint aperiam veniam.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
