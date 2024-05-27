@@ -5,30 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/d68757b9a1.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div id="header">
+    <div id="front">
       <div class="container">
-        <nav>
+        <nav class="header fixed">
           <img src="images/logo.png" class="logo" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#front">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
+          <hr
+            style="
+              width: 100%;
+              opacity: 0.2;
+              text-align: left;
+              margin-top: 10px;
+            "
+          />
         </nav>
-        <hr
-          style="width: 100%; opacity: 0.2; text-align: left; margin-top: 10px"
-        />
 
         <div class="whole-body">
-          <div class="header-text">
+          <div class="front-text">
             <h1>Hi, I'm <span>Aman</span> <br /></h1>
             <div class="text">
               <div class="text-uiux"><h4>UI/UX Designer</h4></div>
@@ -52,7 +58,7 @@
 
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>
+            <p class="aboutme">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
               facilis molestias a, eius necessitatibus excepturi, quae quo optio
               aut velit perspiciatis laborum magni, mollitia harum voluptates
@@ -132,6 +138,91 @@
             </p>
             <a href="#">Learn more</a>
           </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------portfolio---------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-title" style="color: #545353">My Recent work</div>
+        <div class="work-lists">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Debitis fuga tempora aliquam est deleniti rem!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Pig Game App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Debitis fuga tempora aliquam est deleniti rem!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Rock-scissors-paper App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Debitis fuga tempora aliquam est deleniti rem!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+    <!--------------------------Contact------------------------------>
+    <div id="contact">
+      <div class="contact container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>amankhanal@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>021541747</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right"></div>
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              type="Message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn3">Submit</button>
+          </form>
         </div>
       </div>
     </div>

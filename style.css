@@ -8,7 +8,11 @@ body {
   /* background-color: black; */
   color: white;
 }
-#header {
+.header {
+  width: 80%;
+  background: white;
+}
+#front {
   width: 100%;
   height: 100vh;
   /* background-image: url(images/background.png); */
@@ -16,7 +20,10 @@ body {
   background-position: center;
 }
 .container {
-  padding: 10px 10%;
+  padding: 0px 10%;
+}
+.fixed {
+  position: fixed;
 }
 nav {
   display: flex;
@@ -55,19 +62,19 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-.header-text {
+.front-text {
   margin-top: 17%;
   margin-right: 250px;
   font-size: 25px;
   color: rgb(36, 36, 36);
 }
-.header-text h1 {
+.front-text h1 {
   font-size: 50px;
   /* gap: 10px; */
   /* margin-top: 20px; */
   color: rgb(36, 36, 36);
 }
-.header-text h1 span {
+.front-text h1 span {
   color: red;
 }
 .text-uiux {
@@ -150,6 +157,10 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
+.aboutme {
+  text-align: left;
+  width: 80%;
+}
 /* -------------------services--------------------- */
 .sub-title {
   font-weight: 800;
@@ -157,7 +168,7 @@ nav ul li a:hover::after {
 #services {
   padding: 30px 0;
   color: #545353;
-  margin-bottom: 250px;
+  /* margin-bottom: 250px; */
 }
 .services-list {
   display: flex;
@@ -192,4 +203,141 @@ nav ul li a:hover::after {
 .services-list div:hover {
   background: rgb(255, 230, 121);
   transform: translateY(-10px);
+}
+
+.work-lists {
+  display: flex;
+  margin-top: 50px;
+  grid-gap: 40px;
+  color: #ffffff;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  transition: transform 0.2s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgb(0, 0, 0, 0.6), cornsilk);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 15px;
+  transition: height 0.2s;
+}
+.layer h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.layer a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+.btn {
+  display: flex;
+  margin-top: 20px;
+  margin: 50px auto;
+  padding: 14px 40px;
+  width: fit-content;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 230, 121);
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: cornsilk;
+  content: "aman";
+}
+
+/* ..........contact.................. */
+form {
+  /* display: grid; */
+  width: 58%;
+  margin-bottom: 500px;
+}
+.contact {
+  padding: 0px 11%;
+}
+.contact-left {
+  flex-basis: 35%;
+  color: black;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: #545353;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.social-icons a {
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #545353;
+  margin-right: 15px;
+  display: inline-block;
+  transition: color 0.2s;
+  transition: transform 0.2s;
+}
+.social-icons a:hover {
+  color: purple;
+  transform: translateY(-5px);
+}
+.btn2 {
+  display: inline-flex;
+  background-color: cornsilk;
+}
+contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0px;
+  background: #adadad;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.btn3 {
+  display: inline-flex;
+  background-color: cornsilk;
+  margin: 15px;
+  cursor: pointer;
+  font-size: 16px;
 }

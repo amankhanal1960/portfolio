@@ -11,5 +11,7 @@ function opentab(x) {
   });
 
   event.currentTarget.classList.add("active-link");
+  //event.currentTarget Represents the element to which the event listener is attached.
   document.getElementById(x).classList.add("active-tab");
+  //Adds the 'active-tab' class to the content section with the ID specified by x.
 }
